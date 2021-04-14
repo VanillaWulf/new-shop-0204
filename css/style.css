@@ -1,112 +1,126 @@
-:root {
-    --dark-blue: #222222;
-    --pink: #F1E4E6;
-    --dark-pink: #F16D7D;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
 body {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 700;
-}
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700; }
 
 .container {
-    width: 1140px;
-    margin: 0 auto;
-}
+  width: 1140px;
+  margin: 0 auto; }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-}
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0); }
 
 .header {
-    background-color: var(--dark-blue);
-}
-
-.header__wrapper {
+  background-color: #222222; }
+  .header__wrapper {
     min-height: 75px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.header__navigation {
-    display: none;
-}
-
-.header__logo {
-    margin: 0 41px 0 0;
-}
-
-.header__button {
+    align-items: center; }
+  .header__navigation {
+    display: none; }
+  .header__logo {
+    margin: 0 41px 0 0; }
+  .header__button {
     border: none;
-    background-color: transparent;
-}
-
-.header__link {
-    margin: 0 0 0 34px;
-}
+    background-color: transparent; }
+  .header__link {
+    margin: 0 0 0 34px; }
+  .header__button-container {
+    background-color: burlywood; }
+    .header__button-container:hover {
+      background-color: coral; }
+      .header__button-container:hover .header__button-icon {
+        fill: #F16D7D; }
 
 .promo {
-    display: flex;
-    margin: 0 0 63px;
-}
-
-.promo__heading-wrapper {
-    background-color: var(--pink);
+  display: flex;
+  margin: 0 0 63px; }
+  .promo .promo__heading-wrapper {
+    background-color: #F1E4E6;
     flex-grow: 1;
     align-items: center;
     display: flex;
-    padding: 0 0 0 92px;
-}
-
-.promo__heading {
+    padding: 0 0 0 92px; }
+  .promo .promo__heading {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
-    text-transform: uppercase;
-}
-
-.promo__sub-heading {
+    text-transform: uppercase; }
+  .promo .promo__sub-heading {
     font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 38px;
-    display: block;
-}
+    font-weight: 700;
+    font-style: normal;
+    display: block; }
+  .promo .promo__sub-heading-pink {
+    color: #F16D7D; }
 
-.promo__sub-heading-pink {
-    color: var(--dark-pink);
-}
+.categories .categories__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+.categories .categories__item {
+  width: 360px;
+  min-height: 260px; }
+  .categories .categories__item--woman {
+    background-image: url(../img/categories-woman.jpg); }
+  .categories .categories__item--man, .categories .categories__item--kids, .categories .categories__item--accessories {
+    background-image: url(../img/categories-man.jpg); }
+  .categories .categories__item--accessories {
+    width: 100%; }
 
-.categories__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.categories__item { 
-    width: 360px;
-    min-height: 260px;
-}
-
-.categories__item--woman {
-    background-image: url(../img/categories-woman.jpg);
-}
-
-.categories__item--man,
-.categories__item--kids,
-.categories__item--accessories {
-    background-image: url(../img/categories-man.jpg);
-}
-
-.categories__item--accessories {
-    width: 100%;
-}
+/*# sourceMappingURL=style.css.map */

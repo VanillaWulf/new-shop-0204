@@ -1,0 +1,27 @@
+.categories {
+
+    .categories__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .categories__item {
+        width: 360px;
+        min-height: 260px;
+
+        &--woman {
+            background-image: url(../img/categories-woman.jpg);
+        }
+
+        &--man,
+        &--kids,
+        &--accessories {
+            background-image: url(../img/categories-man.jpg);
+        }
+
+        &--accessories {
+            width: 100%;
+        }
+    }
+}
